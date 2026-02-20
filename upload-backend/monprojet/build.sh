@@ -4,10 +4,10 @@
 set -o errexit
 
 # Installer les dépendances
-pip install -r requirements.txt
+pip install -r /upload-backend/monprojet/requirements.txt
 
 # Collecter les fichiers statiques
-python manage.py collectstatic --no-input
+python /upload-backend/monprojet/manage.py collectstatic --no-input
 
 # Faire les migrations
-python manage.py migrate
+python /upload-backend/monprojet/manage.py migrate
