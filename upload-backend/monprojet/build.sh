@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script de build pour Render
 # exit on error
-set -o errexit
+set -o errexit 
 
 # Installer les dépendances
 pip install -r /upload-backend/monprojet/requirements.txt
